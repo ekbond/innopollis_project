@@ -1,3 +1,4 @@
+package Attestation01;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -38,6 +39,7 @@ public class App {
         String input_product_list = scanner.nextLine();            
         
         String[] paths_prod = input_product_list.split(";");
+        
         for (String k : paths_prod) {
             try{
                 String[] prod = k.trim().split("=");

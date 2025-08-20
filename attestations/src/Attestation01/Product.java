@@ -1,3 +1,4 @@
+package Attestation01;
 import java.util.ArrayList;
 import java.util.Objects;
 
@@ -56,7 +57,7 @@ public class Product {
         Product product = (Product) o; // Привести Object к типу Product
         
         // Осуществляется сравнение всех полей, которые были указаны в начале кода
-        return this.name_product.equals(product.name_product) && this.price_product == product.price_product;
+        return price_product == product.price_product && name_product.equals(product.name_product);
     }
 
     @Override
